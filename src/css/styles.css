@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+	/* --azul: #192451; */
+	/* --naranja: #FFBD59; */
+	--azul: #000A23;
+	--naranja: #E38A3A;
+	--blanco: #F3F3F3;
+	--negro: #000000;
+}
+
+
+.azul {
+	color: var(--azul);
+}
+
+.naranja {
+	color: var(--naranja);
+}
+
+body {
+	font-size: 11px;
+	font-family: 'Libre Caslon Text';
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	transition: ease-in-out all .3s;
+}
+
+ul {
+	display: inline-block;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: var(--blanco);
+	-webkit-box-shadow: 0px 4px 5px 0px var(--blanco);
+	-moz-box-shadow: 0px 4px 5px 0px var(--blanco);
+	box-shadow: 0px 4px 5px 0px var(--blanco);
+	color: var(--azul);
+}
+
+header #logo {
+	height: 96px;
+	margin: 0;
+	padding: 0;
+}
+
+#logo-footer {
+	width: 400px;
+	margin: 30px auto;
+	;
+}
+
+header a {
+	color: var(--azul);
+	padding: 5px 10px;
+	border-bottom: 1px solid transparent;
+}
+
+header a:hover {
+	color: var(--naranja);
+	border-bottom: 1px solid var(--naranja);
+}
+
+#social {
+	position: fixed !important;
+	z-index: 3;
+	bottom: 10px;
+	right: 10px;
+}
+
+#social .fa {
+	color: white;
+	background: green;
+	border-radius: 50%;
+	padding: 10px;
+	transition: ease-in-out all .3s;
+}
+
+#social .fa {
+	font-size: 40px;
+	padding: 10px;
+}
+
+.card-servicio {
+	background: var(--azul);
+	color: var(--blanco);
+	border: 1px solid var(--blanco);
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 0 0 23%;
+	transition: ease-in-out all .3s;
+}
+
+.card-servicio:hover {
+	background: var(--naranja);
+	color: #fff;
+	transition: ease-in-out all .3s;
+	border: 1px solid var(--naranja);
+}
+
+.card-servicio .fa {
+	font-size: 3rem;
+	margin-bottom: 15px;
+}
+
+.card-servicio * {
+	font-size: 20px;
+}
+
+.btn-portafolio {
+	background: var(--naranja);
+	transition: ease-in-out all .3s;
+}
+
+.btn-portafolio:hover {
+	background: var(--azul);
+	color: #fff;
+	border: 1px solid var(--naranja);
+	transition: ease-in-out all .3s;
+
+}
+
+.btn-cta {
+	background: var(--naranja) !important;
+	color: var(--azul) !important;
+	font-weight: bolder;
+}
+
+.btn-cta:hover {
+	background: #fff;
+	color: var(--azul);
+	border: 1px solid var(--naranja);
+}
+
+
+
+footer ul * {
+	font-size: 16px !important;
+	color: #fff;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+input[type="text"] {
+	border: 3px solid transparent;
+	transition: ease-in-out all .3s;
+}
+
+select,
+input[type="text"]:focus {
+	outline: 0;
+	border: 3px solid var(--naranja);
+	transition: ease-in-out all .3s;
+}
+
+
+input:focus,
+textarea:focus {
+	outline: 1px solid var(--naranja);
+	border: 1px solid var(--naranja);
+}
+
+
+@media screen and (min-width: 768px) {
+	.title-ns {
+		font-size: 3rem;
+	}
+
+	.jumbotron {
+		font-size: 1.3rem;
+	}
+}
+
+/* Cards */
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.cards {
+	display: none;
+	align-items: center;
+	justify-content: space-around;
+	animation: fadeIn 5s;
+	transition: ease-in-out .3s all;
+}
+
+.cards.active {
+	display: flex;
+	animation: fadeIn 5s;
+	transition: ease-in-out .3s all;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 30px;
+	margin: 10px;
+	text-align: center;
+	width: 450px;
+	max-width: 100%;
+	margin: 100px 0;
+	transition: ease-in-out .3s all;
+	cursor: pointer;
+	border: 1px solid var(--azul);
+}
+
+.card img {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	width: 150px;
+	margin: 0 auto;
+}
+
+.card:hover {
+	box-shadow: 0px 4px 10px var(--naranja);
+	transition: ease-in-out .3s all;
+}
+
+.card h4 {
+	margin: 10px 0;
+	color: var(--azul) !important;
+}
+
+.card small {
+	color: #777;
+	display: block;
+	font-size: .9rem;
+}
+
+
+@media screen and (max-width: 600px) {
+	.cards {
+		flex-wrap: wrap;
+	}
+
+	.card.active {
+		transform: scale(1);
+	}
+}
