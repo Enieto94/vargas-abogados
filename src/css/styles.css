@@ -42,11 +42,10 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 100;
-	background: var(--blanco);
-	-webkit-box-shadow: 0px 4px 5px 0px var(--blanco);
-	-moz-box-shadow: 0px 4px 5px 0px var(--blanco);
-	box-shadow: 0px 4px 5px 0px var(--blanco);
+	background: var(--azul);
+	border-bottom: 3px solid var(--naranja);
 	color: var(--azul);
+
 }
 
 header #logo {
@@ -62,8 +61,8 @@ header #logo {
 }
 
 header a {
-	color: var(--azul);
-	padding: 5px 10px;
+	color: var(--blanco);
+	padding: 0 0 20px 0;
 	border-bottom: 1px solid transparent;
 }
 
@@ -102,6 +101,7 @@ header a:hover {
 	flex-wrap: wrap;
 	flex: 0 0 23%;
 	transition: ease-in-out all .3s;
+	border-radius: 15px;
 }
 
 .card-servicio:hover {
@@ -220,7 +220,7 @@ textarea:focus {
 	margin: 100px 0;
 	transition: ease-in-out .3s all;
 	cursor: pointer;
-	border: 1px solid var(--azul);
+	border: none;
 }
 
 .card img {
@@ -230,7 +230,7 @@ textarea:focus {
 }
 
 .card:hover {
-	box-shadow: 0px 4px 10px var(--naranja);
+	box-shadow: 0px 4px 10px var(--azul);
 	transition: ease-in-out .3s all;
 }
 
