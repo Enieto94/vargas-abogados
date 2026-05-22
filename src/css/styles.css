@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
 	/* --azul: #192451; */
@@ -19,8 +19,8 @@
 }
 
 body {
-	font-size: 11px;
-	font-family: 'Libre Caslon Text';
+	font-size: 12px;
+	font-family: 'Montserrat';
 }
 
 a,
@@ -49,7 +49,7 @@ header {
 }
 
 header #logo {
-	height: 96px;
+	height: 80px;
 	margin: 0;
 	padding: 0;
 }
@@ -138,6 +138,36 @@ header a:hover {
 	padding: 10px;
 }
 
+#inicio {
+	position: relative;
+	height: 80vh;
+	background: url(../img/justicia.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+	background-attachment: fixed;
+}
+
+#mascara {
+	position: absolute;
+	background: #000000bc;
+	display: flex;
+	flex: 0 0 100%;
+	flex-direction: column;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#texto-banner {
+	position: absolute;
+	color: #fff;
+	font-size: 2rem;
+	top: 25%;
+	left: 0;
+	padding-left: 4rem;
+}
+
 .card-servicio {
 	background: var(--azul);
 	color: var(--blanco);
@@ -146,7 +176,7 @@ header a:hover {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	flex: 0 0 23%;
+	flex: 0 0 20%;
 	transition: ease-in-out all .3s;
 	border-radius: 15px;
 	min-height: 190px;
