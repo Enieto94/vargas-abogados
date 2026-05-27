@@ -143,8 +143,8 @@ header a:hover {
 	height: 80vh;
 	background: url(../img/justicia.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: bottom center;
+	background-size: cover;
+	background-position: top center;
 	background-attachment: fixed;
 }
 
